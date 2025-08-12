@@ -21,6 +21,7 @@ import {
   FormGroup,
   Alert,
   LinearProgress,
+  useTheme,
 } from '@mui/material';
 import { useAuth } from '../contexts/AuthContext';
 import { useUser } from '../contexts/UserContext';
