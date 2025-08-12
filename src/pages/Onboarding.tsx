@@ -16,14 +16,11 @@ import {
   FormControlLabel,
   Radio,
   TextField,
-  Slider,
   Chip,
   Stack,
   FormGroup,
-  Checkbox,
   Alert,
   LinearProgress,
-  useTheme,
 } from '@mui/material';
 import { useAuth } from '../contexts/AuthContext';
 import { useUser } from '../contexts/UserContext';

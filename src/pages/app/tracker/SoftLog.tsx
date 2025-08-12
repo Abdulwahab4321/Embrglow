@@ -16,7 +16,6 @@ import {
   FormControlLabel,
   Radio,
   Checkbox,
-  FormGroup,
   Alert,
   LinearProgress,
   useTheme,

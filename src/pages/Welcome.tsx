@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Box,
@@ -12,9 +12,7 @@ import {
   useTheme,
   useMediaQuery,
   Avatar,
-  Divider,
   IconButton,
-  Tooltip,
 } from '@mui/material';
 import {
   Chat,
@@ -32,9 +30,6 @@ import {
   Group,
   HealthAndSafety,
   Translate,
-  EmojiEmotions,
-  TrendingUp,
-  Shield,
   Lock,
   Visibility,
 } from '@mui/icons-material';
@@ -57,10 +52,10 @@ const Welcome: React.FC = () => {
     navigate('/signup');
   };
 
-  const handleLearnMore = () => {
-    trackCTA('learn_more', 'hero');
-    document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  // const handleLearnMore = () => {
+  //   trackCTA('learn_more', 'hero');
+  //   document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+  // };
 
   const handleFeatureClick = (featureName: string) => {
     trackCTA('feature_click', featureName);
