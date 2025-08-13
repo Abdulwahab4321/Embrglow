@@ -233,7 +233,7 @@ const Welcome: React.FC = () => {
                          letterSpacing: '-0.5px',
                        }}
                      >
-                       MenoCare
+                       Embrglo
                      </Typography>
                      <Typography
                        variant="caption"
@@ -251,38 +251,74 @@ const Welcome: React.FC = () => {
                  </Box>
                </motion.div>
 
-               {/* Sign In Button */}
-               <motion.div
-                 initial={{ opacity: 0, x: 30 }}
-                 animate={{ opacity: 1, x: 0 }}
-                 transition={{ duration: 0.6, delay: 0.3 }}
-                 whileHover={{ scale: 1.05 }}
-                 whileTap={{ scale: 0.95 }}
-               >
-                 <Button
-                   variant="outlined"
-                   size="large"
-                   onClick={() => navigate('/login')}
-                   sx={{
-                     borderColor: theme.palette.primary.main,
-                     color: theme.palette.primary.main,
-                     fontWeight: 600,
-                     px: 4,
-                     py: 1.5,
-                     borderRadius: '30px',
-                     textTransform: 'none',
-                     fontSize: '1rem',
-                     boxShadow: '0 4px 16px rgba(233, 30, 99, 0.15)',
-                     '&:hover': {
-                       borderColor: theme.palette.primary.dark,
-                       backgroundColor: `${theme.palette.primary.main}08`,
-                       boxShadow: '0 6px 20px rgba(233, 30, 99, 0.25)',
-                     },
-                   }}
+               {/* Header Buttons */}
+               <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+                 {/* Feedback Button */}
+                 <motion.div
+                   initial={{ opacity: 0, x: 30 }}
+                   animate={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.6, delay: 0.2 }}
+                   whileHover={{ scale: 1.05 }}
+                   whileTap={{ scale: 0.95 }}
                  >
-                   Sign In
-                 </Button>
-               </motion.div>
+                   <Button
+                     variant="outlined"
+                     size="large"
+                     onClick={() => window.open('mailto:Lara@embrglo.com', '_blank')}
+                     sx={{
+                       borderColor: theme.palette.secondary.main,
+                       color: theme.palette.secondary.main,
+                       fontWeight: 600,
+                       px: 4,
+                       py: 1.5,
+                       borderRadius: '30px',
+                       textTransform: 'none',
+                       fontSize: '1rem',
+                       boxShadow: '0 4px 16px rgba(156, 39, 176, 0.15)',
+                       '&:hover': {
+                         borderColor: theme.palette.secondary.dark,
+                         backgroundColor: `${theme.palette.secondary.main}08`,
+                         boxShadow: '0 6px 20px rgba(156, 39, 176, 0.25)',
+                       },
+                     }}
+                   >
+                     Feedback
+                   </Button>
+                 </motion.div>
+
+                 {/* Sign In Button */}
+                 <motion.div
+                   initial={{ opacity: 0, x: 30 }}
+                   animate={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.6, delay: 0.3 }}
+                   whileHover={{ scale: 1.05 }}
+                   whileTap={{ scale: 0.95 }}
+                 >
+                   <Button
+                     variant="outlined"
+                     size="large"
+                     onClick={() => navigate('/login')}
+                     sx={{
+                       borderColor: theme.palette.primary.main,
+                       color: theme.palette.primary.main,
+                       fontWeight: 600,
+                       px: 4,
+                       py: 1.5,
+                       borderRadius: '30px',
+                       textTransform: 'none',
+                       fontSize: '1rem',
+                       boxShadow: '0 4px 16px rgba(233, 30, 99, 0.15)',
+                       '&:hover': {
+                         borderColor: theme.palette.primary.dark,
+                         backgroundColor: `${theme.palette.primary.main}08`,
+                         boxShadow: '0 6px 20px rgba(233, 30, 99, 0.25)',
+                       },
+                     }}
+                   >
+                     Sign In
+                   </Button>
+                 </motion.div>
+               </Box>
              </Box>
 
              {/* Main Hero Content */}

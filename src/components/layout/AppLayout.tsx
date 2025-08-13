@@ -3,6 +3,7 @@ import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import {
   AppBar,
   Box,
+  Button,
   Drawer,
   IconButton,
   List,
@@ -100,7 +101,7 @@ const AppLayout: React.FC = () => {
     <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <Box sx={{ p: 2, borderBottom: 1, borderColor: 'divider' }}>
         <Typography variant="h6" color="primary" fontWeight="bold">
-          Women's Health
+          Embrglo
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Your journey, supported
@@ -182,6 +183,29 @@ const AppLayout: React.FC = () => {
           </Typography>
 
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            {/* Feedback Button */}
+            <Button
+              variant="outlined"
+              size="small"
+              onClick={() => window.open('mailto:Lara@embrglo.com', '_blank')}
+              sx={{
+                borderColor: 'secondary.main',
+                color: 'secondary.main',
+                fontWeight: 600,
+                px: 2,
+                py: 0.5,
+                borderRadius: '20px',
+                textTransform: 'none',
+                fontSize: '0.875rem',
+                '&:hover': {
+                  borderColor: 'secondary.dark',
+                  backgroundColor: 'secondary.main08',
+                },
+              }}
+            >
+              Feedback
+            </Button>
+
             <IconButton color="inherit">
               <Notifications />
             </IconButton>
